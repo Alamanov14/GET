@@ -1,7 +1,7 @@
 let container = document.querySelector(".container");
 let API = "https:www.omdbapi.com/?apikey=b6003d8a&s=All";
 console.log(API);
-fetch(API);
+// fetch(API);
 fetch(API)
   .then((data) => data.json())
 
