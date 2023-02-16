@@ -6,6 +6,7 @@ fetch(API)
   .then((data) => data.json())
 
   .then((res) => {
+    console.log(1);
     res.Search.forEach((elem) => {
       container.innerHTML += `<div class='card'><img src=${elem.Poster}class='movie-img' >  <h2 class='movie-title'>${elem.Title}</h2> <p class='movie-year'>Year
       ${elem.Year}</p> </div>`;
